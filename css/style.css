@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: slateblue;
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(255, 143, 38, 1) 0%,
+    rgba(150, 126, 197, 1) 48%,
+    rgba(0, 255, 222, 1) 100%
+  );
+  background-size: 300% 100%;
+  animation: gradient 15s ease infinite;
+}
+
+.form-container {
+  width: 400px;
+  height: 600px;
+  background: transparent;
+  color: #fff;
+  border-radius: 10px;
+  padding: 40px 50px;
+}
+
+.form-container h1 {
+  font-size: 40px;
+  text-align: center;
+  font-weight: 900;
+}
+
+.form-container .input-box {
+  position: relative;
+  width: 100%;
+  height: 60px;
+  margin: 35px 0;
+}
+
+.input-box input {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 35px;
+  font-size: 16px;
+  color: #fff;
+  padding: 20px 45px 20px 20px;
+}
+
+.input-box input::placeholder {
+  color: #fff;
+}
+
+.input-box i {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 18px;
+}
+
+.form-container .recover-account {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  margin: -15px 0 15px;
+}
+
+.recover-account label input {
+  accent-color: #fff;
+  margin-right: 3px;
+}
+
+.recover-account a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.recover-account a:hover {
+  text-decoration: underline;
+}
+
+.form-container .btn-submit {
+  width: 100%;
+  height: 50px;
+  background: transparent;
+  border: 1px solid #fff;
+  outline: none;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  font-size: 20px;
+  letter-spacing: 2px;
+  color: #fff;
+  font-weight: 700;
+}
+
+.form-container .btn-submit:hover {
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(255, 143, 38, 1) 0%,
+    rgba(150, 126, 197, 1) 48%,
+    rgba(0, 255, 222, 1) 100%
+  );
+  background-size: 250% 80%;
+  animation: gradient 15s ease infinite;
+}
+
+.form-container .register-account {
+  font-size: 14px;
+  text-align: center;
+  margin: 20px 0 15px;
+}
+
+.register-account p a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.register-account p a:hover {
+  text-decoration: underline;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 25%;
+  }
+  25% {
+    background-position: 25% 50%;
+  }
+  50% {
+    background-position: 75% 50%;
+  }
+  75% {
+    background-position: 100% 75%;
+  }
+  100% {
+    background-position: 0% 100%;
+  }
+}
